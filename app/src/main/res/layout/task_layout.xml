@@ -8,29 +8,34 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@color/abc_color_highlight_material">
 
         <TextView
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
-                android:text="Todo List"
+                android:text="Liste des tâches"
                 android:id="@+id/task_layout_tv_title"
                 android:layout_margin="10dp"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+            android:layout_gravity="center_vertical" />
 
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Todo"
-                android:id="@+id/task_layout_btn_todo_add" />
+                android:text="Nouvelle tâche"
+                android:id="@+id/task_layout_btn_todo_add"
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.21" />
 
     </LinearLayout>
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/task_layout_listView" />
 
 </LinearLayout>

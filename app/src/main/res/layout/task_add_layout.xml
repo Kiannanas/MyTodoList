@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="Nom de la tâche"
         android:id="@+id/task_layout_textView"
         android:layout_margin="10dp"
         android:textStyle="bold"
